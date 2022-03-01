@@ -1,20 +1,20 @@
-name: test
+name: wildcam
 channels:
-
-  - conda-forge
-
-  - defaults
+ - pytorch
+ - conda-forge
+ - defaults
 dependencies:
-    # Base depends
-  - python
-  - pip
-
-    # Testing
-  - pytest
-  - pytest-cov
-  - codecov
-
-    # Pip-only installs
-  #- pip:
-  #  - codecov
-
+ - rdkit
+ - matplotlib
+ - pytorch
+ - cudatoolkit
+ - torchvision
+ - torchaudio
+ - python
+   # Testing
+ - pytest
+ - pytest-cov
+ - codecov
+ - numpy
+ - scipy
+ - tqdm
